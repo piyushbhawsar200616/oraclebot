@@ -1,6 +1,4 @@
 fastapi
 uvicorn
-websocket-client
+websockets
 requests
-aiohttp
-pyquotex @ git+https://github.com/cleitonleonel/pyquotex.git
