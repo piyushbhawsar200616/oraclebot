@@ -110,6 +110,8 @@ async def disconnect():
     session_data["token"] = None
     return {"success": True}
 
-if __name__ == "__main__":
+if name == "main":
     import uvicorn
-    uvicorn.run("main:app", host="0.0.0.0", port=8080, reload=False)
+    import os
+    port = int(os.environ.get("PORT", 8080))
+    uvicorn.run("main:app", host="0.0.0.0", port=port, reload=False)
