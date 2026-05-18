@@ -5,7 +5,6 @@ from datetime import datetime
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-import websockets
 import requests
 
 logging.basicConfig(level=logging.INFO)
